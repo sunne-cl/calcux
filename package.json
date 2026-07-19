@@ -1,0 +1,37 @@
+{
+  "name": "Calcux",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder -w"
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^26.8.1"
+  },
+  "description": "",
+  "dependencies": {
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "build": {
+    "protocols": [
+      {
+        "name": "Calcux",
+        "schemes": ["calcux"]
+      }
+    ],
+    "appId": "vexikoff.calcux.utility",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "assets/logos/logo.ico"
+    }
+  }
+}
