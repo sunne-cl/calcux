@@ -1,23 +1,32 @@
-# Calcux 0.1b Release
+# Calcux
+
+A desktop calculator application featuring standard and scientific modes with a clean, modern interface.
 
 ## Features
-- Standard and scientific calculator modes
-- Full iPhone-style interface
-- Dark/light theme support
-- Expandable scientific panel
-- Trigonometric functions (sin, cos, tan)
-- Inverse operations (INV)
-- RAD/DEG angle mode
-- Parentheses support
-- Constants (π, e)
 
-## Downloads
-- [Calcux Setup 0.1b.exe](https://github.com/sunne-cl/calcux/releases/download/0.1b/Calcux%20Setup%200.1b.exe) - Windows installer (recommended)
-- [unpacked-0.1b.zip](https://github.com/sunne-cl/calcux/releases/download/0.1b/unpacked-0.1b.zip) - Portable version (no installation required)
+- Standard arithmetic operations
+- Scientific mode with trigonometric functions
+- Inverse trigonometric functions
+- Factorial, square root, and power operations
+- Constants (pi, e)
+- Parentheses support
+- RAD/DEG angle mode switching
+- Dark and light themes
+- Expandable interface for the scientific panel
 
 ## Installation
-1. For installer: Run `Calcux Setup 0.1b.exe` and follow the wizard
-2. For portable version: Extract ZIP and run `Calcux.exe`
+
+You can download the application from the [Releases](https://github.com/sunne-cl/calcux/releases) page. Choose the version that suits your needs:
+
+## Usage
+
+- Click number and operator buttons to perform calculations.
+- Click `=` to evaluate the expression.
+- Use `INV` to switch to inverse functions (asin, acos, atan).
+- Use `RAD`/`DEG` to toggle the angle mode.
+- Click the expand button in the header to show or hide the scientific panel.
+- Click the theme button to switch between light and dark modes.
 
 ## License
-MIT License - see LICENSE file for details
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
