@@ -16,7 +16,7 @@ A desktop calculator application featuring standard and scientific modes with a 
 
 ## Installation
 
-You can download the application from the [Releases](https://github.com/sunne-cl/calcux/releases) page. Choose the version that suits your needs:
+You can download the application from the [Releases](https://github.com/sunne-cl/calcux/releases) page.
 
 ## Usage
 
