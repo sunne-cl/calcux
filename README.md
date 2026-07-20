@@ -5,8 +5,8 @@ A desktop calculator application featuring standard and scientific modes with a 
 ## Screenshots
 
 ![Calcux](Calcux_ujlYd5Wc53.png)
-![Calcux](Calcux_bLS6X5OUrp.png)
 ![Calcux](Calcux_6DbdfsspJI.png)
+![Calcux](Calcux_bLS6X5OUrp.png)
 ![Calcux](Calcux_bGaarsubKX.png)
 
 ## Features
