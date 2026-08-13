@@ -2,7 +2,7 @@
 
 A desktop calculator application featuring standard and scientific modes with a clean, modern interface.
 
-![Russian Banner](calcuxbannervebm.webm)
+<video src="calcuxbannervebm.webm"></video>
 
 ## Screenshots
 
