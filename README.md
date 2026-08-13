@@ -4,7 +4,7 @@ A desktop calculator application featuring standard and scientific modes with a 
 
 ![Russian Banner](calcuxbannergif.gif)
 
-<a style="background-color: black; color: white;">Download New</a>
+<a href="https://github.com/sunne-cl/calcux/releases/tag/0.1b">Download New</a>
 
 ## Screenshots
 
