@@ -4,6 +4,8 @@ A desktop calculator application featuring standard and scientific modes with a 
 
 ![Russian Banner](calcuxbannergif.gif)
 
+<a style="background-color: black; color: white;">Download New</a>
+
 ## Screenshots
 
 ![Calcux](Calcux_ujlYd5Wc53.png)
