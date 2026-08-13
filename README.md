@@ -2,9 +2,7 @@
 
 A desktop calculator application featuring standard and scientific modes with a clean, modern interface.
 
-<video autoplay loop muted playsinline width="715">
-  <source src="calcuxbannervebm.webm" type="video/webm; codecs=vp9">
-</video>
+<video src="calcuxbannervebm.webm" controls width="715"></video>
 
 ## Screenshots
 
