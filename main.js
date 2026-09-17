@@ -90,16 +90,3 @@ function todark() {
 function goto(url) {
     window.location.href = url;
 }
-
-const screenshot2 = document.getElementById('screenshot2');
-const screenshotw2 = document.getElementById('screenshotw2');
-
-function towhite2() {
-    screenshotw2.classList.remove("hidden")
-    screenshot2.classList.add("hidden")
-}
-
-function todark2() {
-    screenshotw2.classList.add("hidden")
-    screenshot2.classList.remove("hidden")
-}
