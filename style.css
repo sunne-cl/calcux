@@ -133,6 +133,7 @@ body {
     box-shadow: 0 0 32px rgba(255, 255, 255, 0.025);
     border-radius: 12px;
     cursor: pointer;
+    transition: cubic-bezier(.04,.18,.32,.9) 0.2s all;
 }
 
 .spacer {
