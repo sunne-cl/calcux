@@ -73,7 +73,7 @@ screenshotw.addEventListener('mousemove', function(event) {
     screenshotw.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translate3d(${translateX}px, ${translateY}px, 0px)`;
 });
 
-screenshot.addEventListener('mouseleave', function() {
+screenshotw.addEventListener('mouseleave', function() {
     screenshotw.style.transform = 'rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px)';
 });
 
@@ -89,4 +89,17 @@ function todark() {
 
 function goto(url) {
     window.open(url, '_blank');
+}
+
+const screenshot2 = document.getElementById('screenshot2');
+const screenshotw2 = document.getElementById('screenshotw2');
+
+function towhite2() {
+    screenshotw2.classList.remove("hidden")
+    screenshot2.classList.add("hidden")
+}
+
+function todark2() {
+    screenshotw2.classList.add("hidden")
+    screenshot2.classList.remove("hidden")
 }
