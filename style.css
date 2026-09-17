@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    overflow: hidden;
 }
 
 .logoh {
@@ -197,4 +198,23 @@ body {
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 1080px) {
+    .ds {
+        display: none;
+    }
+    .spacer {
+        display: none;
+    }
+}
+
+@media (max-width: 512px) {
+    .rows {
+        width: 100%;
+        padding: 0px 24px;
+    }
+    .downloadbutton {
+        width: 100%;
+    }
 }
