@@ -29,10 +29,6 @@ downButton.addEventListener('mouseleave', function() {
     downButton.style.transform = 'rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px)';
 });
 
-downButton1.addEventListener('mouseleave', function() {
-    downButton1.style.transform = 'rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px)';
-});
-
 const screenshot = document.getElementById('screenshot');
 
 const maxRotationXc = -0.1;
