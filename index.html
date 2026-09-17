@@ -1,89 +1,54 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcux - your calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght,wdth,opsz,slnt,GRAD,ROND@100..1000,25..151,6..144,-10..0,0..100,0..100&display=swap"> 
+    <link rel="icon" type="image/png" href="assets/logos/logobg.png">
+
+    <meta name="description" content="The best modern calculator">
+    <meta name="keywords" content="calcux, calculator, vexikoff, calcux calculator, sunne calculator, sunne calcux, sunne, sunne cl">
+    <meta name="author" content="vexikoff">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Calcux">
+    <meta property="og:description" content="The best modern calculator">
+    <meta property="og:url" content="https://github.com/vexikoff">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calcux">
+    <meta name="twitter:description" content="The best modern calculator">
 </head>
-<body class="" id="body">
-    <div id="app">
-        <div class="header drag">
-            <div class="mainright">
-                <div id="overlay" class="overlay"></div>
-                <div id="overlay2" class="overlay"></div>
-                <div class="txthead">
-                    <h1 class="texthead">
-                        Calcux
-                    </h1>
-                </div>
+<body>
+    <!-- VEXIKOFF -->
+    <div class="headercont">
+        <header class="header">
+            <img src="assets/logos/3.png" alt="" class="logoh">
+            <div class="rightp">
+                <a href="https://github.com/sunne-cl/calcux/releases/download/0.1b/unpacked-0.1b.zip" class="hdws">Download</a>
             </div>
-            <div class="mainleft">
-                <svg class="widthbut" id="width" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15 3.75C10.2691 3.75 7.00453 4.23044 4.76172 4.8457C11.3307 5.4355 2.13973 7.5 15 7.5V11.25C15 11.25 13.2422 15.0001 0 15V11.25C4.73041 11.25 7.99451 10.7685 10.2373 10.1533C3.67032 9.56339 12.8596 7.5 0 7.5V3.75C0 3.75 1.75784 -5.14581e-05 15 5.29587e-10V3.75Z" fill="var(--icon-color)"/>
-                </svg>
-                <svg class="themesw" id="themesw" width="15" height="15" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.21313 6.2132L36.2131 36.2132M6.21313 36.2132L36.2131 6.2132" stroke="var(--icon-color)" stroke-width="6"/>
-                    <path d="M0 21.2132L42.4264 21.2132M21.2132 42.4264L21.2132 -7.22962e-06" stroke="var(--icon-color)" stroke-width="6"/>
-                </svg>
-                <svg class="minimize" onclick="control('minimize')" width="15" height="3" viewBox="0 0 43 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 3L42.4264 3" stroke="var(--icon-color)" stroke-width="6"/>
-                </svg>
-                <svg class="close" onclick="control('close')" width="15" height="15" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.12134 2.12131L32.1213 32.1213M2.12134 32.1213L32.1213 2.12131" stroke="var(--icon-color)" stroke-width="6"/>
-                </svg>
-            </div>
-        </div>
-        <div class="mainpanel">
-            <div class="maininppan">
-                <input type="text" class="maininp">
-            </div>
-            <div class="maininppan">
-                <h3 class="answer"></h3>
-            </div>
-            <div class="rowc">
-                <div class="leftpan">
-                    <button class="panel redp">B</button>
-                    <button class="panel redp">CE</button>
-                    <button class="panel redp">C</button>
-                    <button class="panel redsp">+/-</button>
-                    <button class="panel">7</button>
-                    <button class="panel">8</button>
-                    <button class="panel">9</button>
-                    <button class="panel redsp">*</button>
-                    <button class="panel">4</button>
-                    <button class="panel">5</button>
-                    <button class="panel">6</button>
-                    <button class="panel redsp">/</button>
-                    <button class="panel">1</button>
-                    <button class="panel">2</button>
-                    <button class="panel">3</button>
-                    <button class="panel redsp">-</button>
-                    <button class="panel">0</button>
-                    <button class="panel">,</button>
-                    <button class="panel redp">=</button>
-                    <button class="panel redsp">+</button>
-                </div>
+        </header>
+    </div>
+    <div class="premain">
+        <div class="main">
+            <div class="main1">
+                <img src="assets/preview1.png" alt="" class="ds" width="300px" height="450px" id="screenshot" onclick="towhite()">
+                <img src="assets/preview2.png" alt="" class="ds hidden" width="300px" height="450px" id="screenshotw" onclick="todark()">
                 <div class="spacer"></div>
-                <div class="rightpan">
-                    <button class="panelr redp">INV</button>
-                    <button class="panelr redp">RAD</button>
-                    <button class="panelr redp">x!</button>
-                    <button class="panelr redsp">sin</button>
-                    <button class="panelr">cos</button>
-                    <button class="panelr">tan</button>
-                    <button class="panelr redsp">xʸ</button>
-                    <button class="panelr">π</button>
-                    <button class="panelr">e</button>
-                    <button class="panelr redsp">√</button>
-                    <button class="panelr">()</button>
-                    <button class="panelr">x²</button>
+                <div class="rows">
+                    <h1 class="rowsh1">New Era Calculator - Calcux</h1>
+                    <p class="rowsp1">With a beautiful and user-friendly design</p>
+                    <button class="downloadbutton" id="downbutton" onclick="goto('https://github.com/sunne-cl/calcux/releases/download/0.1b/unpacked-0.1b.zip')">Download</button>
+                    <p class="rowsp2">Calculate quickly and easily by adding Calcux to your desktop.</p>
                 </div>
-            </div>
-            <div class="footer">
-                <p>By Sunne CL</p>
-                <img src="assets/logos/sunne.png" alt="" width="25px" height="25px">
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
+    <!-- VEXIKOFF -->
+    <div class="bg"></div>
+    <script src="main.js"></script>
 </body>
 </html>
