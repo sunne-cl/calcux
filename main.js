@@ -88,5 +88,5 @@ function todark() {
 }
 
 function goto(url) {
-    window.open(url, '_blank');
+    window.location.href = url;
 }
