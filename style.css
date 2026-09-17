@@ -9,6 +9,7 @@ body {
 
 .logoh {
     height: 32px;
+    cursor: pointer;
 }
 
 .header {
