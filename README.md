@@ -1,43 +1,23 @@
-# Calcux
-
-A desktop calculator application featuring standard and scientific modes with a clean, modern interface.
-
-![Russian Banner](calcuxbannergif.gif)
-
-<a href="https://github.com/sunne-cl/calcux/releases/tag/0.1b">Download New</a>
-
-## Screenshots
-
-![Calcux](Calcux_ujlYd5Wc53.png)
-![Calcux](Calcux_6DbdfsspJI.png)
-![Calcux](Calcux_bLS6X5OUrp.png)
-![Calcux](Calcux_bGaarsubKX.png)
+# Calcux 0.1b Release
 
 ## Features
-
-- Standard arithmetic operations
-- Scientific mode with trigonometric functions
-- Inverse trigonometric functions
-- Factorial, square root, and power operations
-- Constants (pi, e)
+- Standard and scientific calculator modes
+- Full iPhone-style interface
+- Dark/light theme support
+- Expandable scientific panel
+- Trigonometric functions (sin, cos, tan)
+- Inverse operations (INV)
+- RAD/DEG angle mode
 - Parentheses support
-- RAD/DEG angle mode switching
-- Dark and light themes
-- Expandable interface for the scientific panel
+- Constants (π, e)
+
+## Downloads
+- [Calcux Setup 0.1b.exe](https://github.com/sunne-cl/calcux/releases/download/0.1b/Calcux%20Setup%200.1b.exe) - Windows installer (recommended)
+- [unpacked-0.1b.zip](https://github.com/sunne-cl/calcux/releases/download/0.1b/unpacked-0.1b.zip) - Portable version (no installation required)
 
 ## Installation
-
-You can download the application from the [Releases](https://github.com/sunne-cl/calcux/releases) page.
-
-## Usage
-
-- Click number and operator buttons to perform calculations.
-- Click `=` to evaluate the expression.
-- Use `INV` to switch to inverse functions (asin, acos, atan).
-- Use `RAD`/`DEG` to toggle the angle mode.
-- Click the expand button in the header to show or hide the scientific panel.
-- Click the theme button to switch between light and dark modes.
+1. For installer: Run `Calcux Setup 0.1b.exe` and follow the wizard
+2. For portable version: Extract ZIP and run `Calcux.exe`
 
 ## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+MIT License - see LICENSE file for details
