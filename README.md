@@ -6,13 +6,6 @@ A desktop calculator application featuring standard and scientific modes with a 
 
 <a href="https://github.com/sunne-cl/calcux/releases/tag/0.1b">Download New</a>
 
-## Screenshots
-
-![Calcux](Calcux_ujlYd5Wc53.png)
-![Calcux](Calcux_6DbdfsspJI.png)
-![Calcux](Calcux_bLS6X5OUrp.png)
-![Calcux](Calcux_bGaarsubKX.png)
-
 ## Features
 
 - Standard arithmetic operations
