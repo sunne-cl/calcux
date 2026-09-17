@@ -15,3 +15,7 @@ downButton1.addEventListener('mousemove', function(event) {
     
     downButton1.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translate3d(${translateX}px, ${translateY}px, 0px)`;
 });
+
+downButton1.addEventListener('mouseleave', function() {
+    downButton1.style.transform = 'rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px)';
+});
