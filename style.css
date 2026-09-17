@@ -1,0 +1,200 @@
+/* vexikoff */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.logoh {
+    height: 32px;
+}
+
+.header {
+    width: 1080px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 12px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 3;
+    overflow: hidden;
+    position: sticky; 
+}
+
+.header::before {
+    content: "";
+    width: 1280px;
+    height: 96px;
+    backdrop-filter: blur(24px);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.headercont {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.rightp {
+    display: flex;
+    height: 32px;
+    width: auto;
+    margin-left: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hdws {
+    height: 24px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    line-height: 147.5%;
+    width: 96px;
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("assets/bg/1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    z-index: -1;
+}
+
+.premain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.main {
+    width: 1280px;
+    min-height: 100vh;
+}
+
+@media (max-width: 1280px) {
+    .header {
+        width: 100%;
+        border-radius: 12px;
+        margin-right: 12px;
+        margin-left: 12px;
+        margin-top: 12px;
+    }
+    .main {
+        width: 100%;
+    }
+}
+
+.main1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    perspective: 512px;
+}
+
+.main1 img {
+    box-shadow: 0 0 32px rgba(255, 255, 255, 0.025);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.spacer {
+    width: 1px;
+    height: 384px;
+    margin-left: 32px;
+    margin-right: 32px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 450px;
+    font-family: "Google Sans Flex", sans-serif;
+    justify-content: center;
+    perspective: 64px;
+}
+
+.rows * {
+    padding: 0;
+    margin: 0;
+}
+
+.rowsh1 {
+    margin-bottom: 6px;
+}
+
+.rowsp1 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.rowsp2 {
+    margin-bottom: 6px;
+    font-size: 16px;
+    opacity: 50%;
+}
+
+.downloadbutton {
+    height: 32px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    line-height: 147.5%;
+    width: 450px;
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 8px;
+    transition: cubic-bezier(.04,.18,.32,.9) 0.2s all;
+}
+
+.downloadbutton:hover {
+    transform: rotateY(-0.25deg);
+}
+
+.hidden {
+    display: none;
+}
