@@ -1,37 +1,80 @@
 {
   "name": "Calcux",
+  "productName": "Calcux",
   "version": "1.0.0",
+  "description": "Calcux...",
+  "author": {
+    "name": "vexikoff"
+  },
+  "license": "UNLICENSED",
+  "private": true,
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder -w"
+    "dev": "electron .",
+    "pack": "electron-builder --dir --win",
+    "dist": "electron-builder --win",
+    "build": "electron-builder --win",
+    "postinstall": "electron-builder install-app-deps"
   },
   "devDependencies": {
-    "electron": "^28.3.3",
-    "electron-builder": "^26.8.1"
+    "electron": "*",
+    "electron-builder": "*"
   },
-  "description": "",
-  "dependencies": {
-
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "build": {
-    "protocols": [
-      {
-        "name": "Calcux",
-        "schemes": ["calcux"]
-      }
-    ],
-    "appId": "vexikoff.calcux.utility",
+    "appId": "xyz.vexikoff.calcux",
+    "productName": "Calcux",
+    "executableName": "Calcux",
+    "copyright": "Sunne CL",
+    "artifactName": "${name}-${version}-windows-${arch}.${ext}",
     "directories": {
+      "buildResources": ".",
       "output": "dist"
     },
+    "files": [
+      "**/*",
+      "!dist/**",
+      "!release/**",
+      "!**/*.map",
+      "!**/.DS_Store",
+      "!node_modules/.cache/**"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/logos/logobg.png",
+        "to": "assets/logos/logobg.png"
+      },
+      {
+        "from": "assets/logos/logo.ico",
+        "to": "assets/logos/logo.ico"
+      }
+    ],
+    "asar": true,
+    "npmRebuild": true,
     "win": {
-      "target": "nsis",
-      "icon": "assets/logos/logo.ico"
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/logos/logo.ico",
+      "artifactName": "${name}-${version}-windows-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Calcux",
+      "installerIcon": "assets/logos/logo.ico",
+      "uninstallerIcon": "assets/logos/logo.ico",
+      "installerHeaderIcon": "assets/logos/logo.ico",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": true
     }
   }
 }
