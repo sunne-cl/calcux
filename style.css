@@ -275,6 +275,12 @@ body {
     .downloadbutton {
         width: 100%;
     }
+    .downloadbutton1 {
+        width: 100%;
+    }
+    .downloadbutton2 {
+        width: 100%;
+    }
 }
 
 @media (max-height: 720px) {
